@@ -1,5 +1,5 @@
 <?php
-		$servername = "localhost"; //server name will replace this variable 54.160.37.238 (Database Production) 3.234.155.244 (Test Production)
+		$servername = "3.234.155.244"; //server name will replace this variable 54.160.37.238 (Database Production) 3.234.155.244 (Test Production)
 		$username = "root"; //username will replace this variable
 		$password = ""; //password will replace this variable
 		$dbname = "test";
