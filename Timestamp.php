@@ -12,7 +12,7 @@
 <form name="frmInsert" method="post" action="Timestamp_php.php">
 <?php
 //Retrieve Time
-	$servername = "localhost"; //3.234.155.244
+	$servername = "3.234.155.244"; //3.234.155.244
 	$username = "root";
 	$password = "";
 	$dbname = "test";
