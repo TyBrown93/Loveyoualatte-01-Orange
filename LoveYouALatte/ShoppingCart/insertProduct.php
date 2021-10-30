@@ -3,8 +3,8 @@ include_once 'config.php';
 if(isset($_POST['submit']))
 {   
      $name = $_POST['name'];
-     $email = $_POST['email'];
-     $mobile = $_POST['mobile'];
+     $desc = $_POST['desc'];
+     $price = $_POST['price'];
      $sql = "INSERT INTO products (name,desc,price)
      VALUES ('$name','$desc','$price')";
      if (mysqli_query($conn, $sql)) {
