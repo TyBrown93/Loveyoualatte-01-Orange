@@ -2,9 +2,9 @@
 include_once 'config.php';
 if(isset($_POST['submit']))
 {   
-     $name = $_POST['name'];
-     $desc = $_POST['desc'];
-     $price = $_POST['price'];
+     $name = mysqli_real_escape_string($_POST['name']);
+     $desc = mysqli_real_escape_string($_POST['desc']);
+     $price = mysqli_real_escape_string($_POST['price']);
      $sql = "INSERT INTO products (name,desc,price)
      VALUES ('$name','$desc','$price')";
      if (mysqli_query($conn, $sql)) {
@@ -38,7 +38,7 @@ if(isset($_POST['submit']))
                     <h2>Add Menu Item Form</h2>
                 </div>
                 <p>Please fill this form to add products to the menu.</p>
-                <form action="index.php?page=insertProduct" method="post">
+                <form action="addmenu.php" method="post">
                     <div class="form-group">
                         <label>Product Name</label>
                         <input type="text" name="name" class="form-control">
